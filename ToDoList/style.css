@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Nanum Pen Script';
+
+}
+
+
+body{
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main{
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calender{
+  width:1000px;
+  margin : 50px;
+}
+
+.header{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items : center;
+}
+
+
+.nav{
+  display:flex;
+  font-size:35px;
+}
+
+.nav > button{
+  width: 100px;
+  height : 50px;
+  text-align : center;
+  font-size : 25px;
+  background-color: #FFD5D2;
+  cursor:pointer;
+  line-height: 20px;
+}
+
+button:nth-child(1){
+  border-radius : 50px 0px 0px 50px;
+  margin-right:10px;
+}
+
+
+button:nth-child(3){
+  border-radius : 0px 50px 50px 0px;
+  margin-left: 10px;
+}
+
+.days{
+  margin: 10px 20px 10px;
+}
+
+.day{
+  font-size : 20px;
+  width:calc(100%/7);
+  flex-direction: row;
+  color:black;
+  display : inline;
+  padding : 60px;
+  text-align: center;
+}
+
+.day:nth-child(7n+1),
+.date:nth-child(7n+1){
+  color : red;
+}
+
+.day:nth-child(7n),
+.date:nth-child(7n+7){
+  color : blue;
+}
+
+.dates{
+  cursor : pointer;
+  background-color : #C8C8FF;
+  display:flex;
+  flex-flow : row wrap; /*flex 컨테이너의 끝에 닿으면 문자의 표기방향에 따라 줄 바꿈 */
+  height:500px;
+  border-top:5px solid #333333;
+  border-right:5px solid #333333;
+}
+
+.date{
+  font-size:20px;
+  width:calc(100%/7);
+  padding:15px;
+  text-align:right;
+  border-bottom:7px solid #333333;
+  border-left:5px solid #333333;
+}
