@@ -1,5 +1,5 @@
 # ToDoList-
-HTML,CSS, Javascript를 이용한 일정표 만들기
+HTML,CSS, Javascript, localStorage를 이용한 일정표 만들기
 
 - 요구사항
   - 일자별로 todo(할일)을 등록할 수 있습니다.
